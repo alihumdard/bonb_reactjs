@@ -1,9 +1,9 @@
 import React from 'react';
-import Sectionwraper from './sectionwraper';
 import { FaFacebookF, FaInstagramSquare, FaLinkedinIn, FaYoutube } from 'react-icons/fa';
 import { FaXTwitter } from 'react-icons/fa6';
 import { Link } from 'react-router-dom';
 import URLS from '../config/urls.config';
+import Sectionwraper from './Sectionwraper';
 
 const Footer = () => {
     return (
