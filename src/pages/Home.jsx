@@ -1,8 +1,8 @@
 import React from 'react'
-import Sectionwraper from '../main/sectionwraper';
 import { FaLeaf, FaUser, FaUsers } from 'react-icons/fa';
 import Navbar from '../main/Navbar';
 import Footer from '../main/Footer';
+import Sectionwraper from '../main/Sectionwraper';
 
 const Home = () => {
     const items = [
