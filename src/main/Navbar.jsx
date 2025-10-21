@@ -1,13 +1,13 @@
 import React, { useState } from 'react';
-import Sectionwraper from './sectionwraper';
 import { Link } from 'react-router-dom';
 import URLS from '../config/urls.config';
+import Sectionwraper from './Sectionwraper';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className='border-b-2 border-gray-200'>
+    <div className='border-b-2 border-gray-200 '>
     <Sectionwraper>
       <nav className="container mx-auto py-4">
         <div className="flex items-center justify-between">
