@@ -1,8 +1,9 @@
 import React from 'react'
 import { FaLeaf, FaUser, FaUsers } from 'react-icons/fa';
-import Navbar from '../main/Navbar';
 import Footer from '../main/Footer';
 import Sectionwraper from '../main/Sectionwraper';
+import { Link } from 'react-router-dom';
+import URLS from '../config/urls.config';
 
 const Home = () => {
     const items = [
@@ -12,16 +13,17 @@ const Home = () => {
     ];
     return (
         <>
+        <Sectionwraper>
             <Sectionwraper>
                 <section className="py-16 md:pb-24 md:pt-40">
                     <div className="text-center">
                         {/* Main Heading */}
-                        <h1 className="text-4xl sm:text-5xl md:text-6xl font-serif text-gray-900 leading-tight mb-6">
+                        <h1 className="text-4xl sm:text-5xl font-normal font-serif text-gray-900 leading-tight mb-6">
                             Healing hope for <br /> survivors in Ghana
                         </h1>
 
                         {/* Description */}
-                        <p className="text-lg md:text-xl text-gray-600 mb-10 max-w-2xl mx-auto">
+                        <p className="text-md text-gray-600 mb-10 font-lora max-w-xl mx-auto">
                             We stand with survivors of abuse and homelessness, offering a beacon
                             of light and support. Our mission is to transform lives through
                             compassionate care and empowerment.
@@ -29,10 +31,10 @@ const Home = () => {
 
                         {/* Action Buttons */}
                         <div className="flex justify-center space-x-4 mb-16">
-                            <button className="bg-orange-600 cursor-pointer text-white font-semibold py-3 px-8 rounded-full hover:bg-orange-700 transition-colors duration-300 text-lg">
+                            <button className="bg-orange-600 cursor-pointer text-white font-semibold py-2 px-6 rounded-full hover:bg-orange-700 transition-colors duration-300 text-lg">
                                 Donate
                             </button>
-                            <button className="bg-gray-100 cursor-pointer text-gray-800 font-semibold py-3 px-8 rounded-full hover:bg-gray-200 transition-colors duration-300 text-lg">
+                            <button className="bg-gray-100 cursor-pointer text-gray-800 font-semibold py-2 px-6 rounded-full hover:bg-gray-200 transition-colors duration-300 text-lg">
                                 Volunteer
                             </button>
                         </div>
@@ -68,8 +70,8 @@ const Home = () => {
                                 <button className="bg-orange-600 cursor-pointer text-white font-semibold py-3 px-7 rounded-full hover:bg-orange-700 transition-colors duration-300 text-md">
                                     Learn more
                                 </button>
-                                <a
-                                    href="#"
+                                <Link
+                                    to={URLS.CONTACT}
                                     className="flex items-center text-gray-700 hover:text-orange-600 transition-colors duration-300 font-medium text-md"
                                 >
                                     Contact us
@@ -87,7 +89,7 @@ const Home = () => {
                                             d="M9 5l7 7-7 7"
                                         ></path>
                                     </svg>
-                                </a>
+                                </Link>
                             </div>
                         </div>
 
@@ -140,8 +142,8 @@ const Home = () => {
                                 <button className="bg-orange-600 cursor-pointer text-white font-semibold py-3 px-7 rounded-full hover:bg-orange-700 transition-colors duration-300 text-md">
                                     Learn more
                                 </button>
-                                <a
-                                    href="#"
+                                <Link
+                                    to={URLS.CONTACT}
                                     className="flex items-center text-gray-700 hover:text-orange-600 transition-colors duration-300 font-medium text-md"
                                 >
                                     Contact us
@@ -159,7 +161,7 @@ const Home = () => {
                                             d="M9 5l7 7-7 7"
                                         ></path>
                                     </svg>
-                                </a>
+                                </Link>
                             </div>
                         </div>
                     </div>
@@ -189,8 +191,8 @@ const Home = () => {
                                     <button className="bg-orange-600 cursor-pointer text-white font-semibold py-3 px-7 rounded-full hover:bg-orange-700 transition-colors duration-300 text-md">
                                         Learn more
                                     </button>
-                                    <a
-                                        href="#"
+                                    <Link
+                                        to={URLS.CONTACT}
                                         className="flex items-center text-gray-700 hover:text-orange-600 transition-colors duration-300 font-medium text-md"
                                     >
                                         Contact us
@@ -208,7 +210,7 @@ const Home = () => {
                                                 d="M9 5l7 7-7 7"
                                             ></path>
                                         </svg>
-                                    </a>
+                                    </Link>
                                 </div>
                             </div>
 
@@ -247,8 +249,8 @@ const Home = () => {
                                     <button className="bg-orange-600 cursor-pointer text-white font-semibold py-3 px-7 rounded-full hover:bg-orange-700 transition-colors duration-300 text-md">
                                         Learn more
                                     </button>
-                                    <a
-                                        href="#"
+                                    <Link
+                                        to={URLS.CONTACT}
                                         className="flex items-center text-gray-700 hover:text-orange-600 transition-colors duration-300 font-medium text-md"
                                     >
                                         Contact us
@@ -266,7 +268,7 @@ const Home = () => {
                                                 d="M9 5l7 7-7 7"
                                             ></path>
                                         </svg>
-                                    </a>
+                                    </Link>
                                 </div>
                             </div>
 
@@ -305,8 +307,8 @@ const Home = () => {
                                     <button className="bg-orange-600 cursor-pointer text-white font-semibold py-3 px-7 rounded-full hover:bg-orange-700 transition-colors duration-300 text-md">
                                         Learn more
                                     </button>
-                                    <a
-                                        href="#"
+                                    <Link
+                                        to={URLS.CONTACT}
                                         className="flex items-center text-gray-700 hover:text-orange-600 transition-colors duration-300 font-medium text-md"
                                     >
                                         Contact us
@@ -324,7 +326,7 @@ const Home = () => {
                                                 d="M9 5l7 7-7 7"
                                             ></path>
                                         </svg>
-                                    </a>
+                                    </Link>
                                 </div>
                             </div>
 
@@ -346,23 +348,21 @@ const Home = () => {
                 <section className="py-16 md:pb-24 md:pt-40">
                     <div className=" text-center">
                         {/* Main Heading */}
-                        <h1 className="text-4xl sm:text-5xl md:text-6xl font-serif text-gray-900 leading-tight mb-6">
-                            Healing hope for <br /> survivors in Ghana
+                        <h1 className="text-4xl sm:text-5xl  font-serif text-gray-900 leading-tight mb-6">
+                        Join our mission of hope
                         </h1>
 
                         {/* Description */}
-                        <p className="text-lg md:text-xl text-gray-600 mb-10 max-w-2xl mx-auto">
-                            We stand with survivors of abuse and homelessness, offering a beacon
-                            of light and support. Our mission is to transform lives through
-                            compassionate care and empowerment.
+                        <p className="text-lg md:text-xl text-gray-600 mb-10 font-lora max-w-3xl mx-auto">
+                           Every contribution helps us provide critical support and create meaningful change in survivors' lives.
                         </p>
 
                         {/* Action Buttons */}
                         <div className="flex justify-center space-x-4 mb-16">
-                            <button className="bg-orange-600 cursor-pointer text-white font-semibold py-3 px-8 rounded-full hover:bg-orange-700 transition-colors duration-300 text-lg">
+                            <button className="bg-orange-600 cursor-pointer text-white font-semibold py-2 px-6 rounded-full hover:bg-orange-700 transition-colors duration-300 text-lg">
                                 Donate
                             </button>
-                            <button className="bg-gray-100 cursor-pointer text-gray-800 font-semibold py-3 px-8 rounded-full hover:bg-gray-200 transition-colors duration-300 text-lg">
+                            <button className="bg-gray-100 cursor-pointer text-gray-800 font-semibold py-2 px-6 rounded-full hover:bg-gray-200 transition-colors duration-300 text-lg">
                                 Volunteer
                             </button>
                         </div>
@@ -380,6 +380,7 @@ const Home = () => {
             </Sectionwraper>
 
             <Footer/>
+            </Sectionwraper>
         </>
     );
 };

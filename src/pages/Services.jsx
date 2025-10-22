@@ -1,5 +1,7 @@
 import React from 'react'
 import Footer2 from '../main/Footer2'
+import { Link } from 'react-router-dom'
+import URLS from '../config/urls.config'
 
 const Services = () => {
   return (
@@ -44,9 +46,9 @@ const Services = () => {
                       and a sense of belonging as they begin to rebuild their lives.
                     </p>
                     <div className="flex justify-center lg:justify-start space-x-6">
-                      <button className="bg-orange-600 cursor-pointer text-white font-semibold py-3 px-7 rounded-full hover:bg-orange-700 transition-colors duration-300 text-md">
+                      <Link to={URLS.CONTACT} className="bg-orange-600 cursor-pointer text-white font-semibold py-3 px-7 rounded-lg hover:bg-orange-700 transition-colors duration-300 text-md">
                         Contact us
-                      </button>
+                      </Link>
                       <a
                         href="#"
                         className="flex items-center text-gray-700 hover:text-orange-600 transition-colors duration-300 font-medium text-md"
@@ -84,9 +86,9 @@ const Services = () => {
                       Our trained counselors provide trauma-informed therapy and emotional support to help survivors process their experiences and regain inner strength.
                     </p>
                     <div className="flex justify-center lg:justify-start space-x-6">
-                      <button className="bg-orange-600 text-white cursor-pointer font-semibold py-3 px-7 rounded-full hover:bg-orange-700 transition-colors duration-300 text-md">
+                      <Link to={URLS.CONTACT} className="bg-orange-600 text-white cursor-pointer font-semibold py-3 px-7 rounded-lg hover:bg-orange-700 transition-colors duration-300 text-md">
                         Contact us
-                      </button>
+                      </Link>
                       <a
                         href="#"
                         className="flex items-center text-gray-700 hover:text-orange-600 transition-colors duration-300 font-medium text-md"
@@ -140,9 +142,9 @@ const Services = () => {
                       We connect survivors with legal professionals and social workers who help them seek justice, understand their rights, and navigate legal processes with confidence.
                     </p>
                     <div className="flex justify-center lg:justify-start space-x-6">
-                      <button className="bg-orange-600 cursor-pointer text-white font-semibold py-3 px-7 rounded-full hover:bg-orange-700 transition-colors duration-300 text-md">
+                      <Link to={URLS.CONTACT} className="bg-orange-600 cursor-pointer text-white font-semibold py-3 px-7 rounded-lg hover:bg-orange-700 transition-colors duration-300 text-md">
                         Contact us
-                      </button>
+                      </Link>
                       <a
                         href="#"
                         className="flex items-center text-gray-700 hover:text-orange-600 transition-colors duration-300 font-medium text-md"
@@ -179,9 +181,9 @@ const Services = () => {
                       We offer skill-building workshops and economic empowerment initiatives that help survivors achieve independence and create sustainable sources of income.
                     </p>
                     <div className="flex justify-center lg:justify-start space-x-6">
-                      <button className="bg-orange-600 cursor-pointer text-white font-semibold py-3 px-7 rounded-full hover:bg-orange-700 transition-colors duration-300 text-md">
+                      <Link to={URLS.CONTACT} className="bg-orange-600 cursor-pointer text-white font-semibold py-3 px-7 rounded-lg hover:bg-orange-700 transition-colors duration-300 text-md">
                         Contact us
-                      </button>
+                      </Link>
                       <a
                         href="#"
                         className="flex items-center text-gray-700 hover:text-orange-600 transition-colors duration-300 font-medium text-md"

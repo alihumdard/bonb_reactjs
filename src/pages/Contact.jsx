@@ -11,7 +11,7 @@ const Contact = () => {
           <h2 className="text-4xl sm:text-5xl font-serif text-gray-900 leading-tight mb-6">
             Join Our Mission
           </h2>
-          <p className="text-lg md:text-xl text-gray-600 max-w-2xl mx-auto">
+          <p className="text-lg md:text-xl text-gray-600 font-serif max-w-2xl mx-auto">
             Together, we can create lasting change for survivors across Ghana. Join us in restoring hope, rebuilding lives, and empowering those on their journey to healing.
           </p>
         </div>
@@ -24,7 +24,7 @@ const Contact = () => {
             <h2 className="text-4xl sm:text-5xl font-serif text-gray-900 leading-tight mb-6">
               Why Reach Out to Us?
             </h2>
-            <p className="text-base md:text-lg text-gray-700 max-w-2xl mx-auto leading-relaxed">
+            <p className="text-base md:text-lg font-serif text-gray-700 max-w-2xl mx-auto leading-relaxed">
               At Beacon of New Beginnings, we are committed to providing
               responsive and compassionate support to everyone we serve. Whether
               you are a survivor seeking help, a donor wishing to contribute, a

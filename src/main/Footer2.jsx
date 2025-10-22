@@ -3,16 +3,15 @@ import { FaFacebookF, FaInstagramSquare, FaLinkedinIn, FaYoutube } from 'react-i
 import { FaXTwitter } from 'react-icons/fa6';
 import { Link } from 'react-router-dom';
 import URLS from '../config/urls.config';
+import Sectionwraper from './Sectionwraper';
 
-const Footer2 = () => {
+const Footer = () => {
     return (
-        <div className='max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 '>
-            <footer className="pt-16 pb-8 font-sans bg-white">
+        <Sectionwraper>
+            <footer className="pt-16 pb-8 font-sans">
                 <div className="container mx-auto">
-                    {/* Main Footer Grid */}
-                    <div className="bg-gray-200 p-8 md:p-12 rounded-2xl shadow-sm border border-gray-100 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12 mb-10">
-                        {/* Column 1: Logo & Newsletter */}
-                        <div className="flex flex-col items-center sm:items-start text-center sm:text-left">
+                    <div className="bg-gray-200 p-8 md:p-12 rounded-2xl shadow-sm border border-gray-100 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8 mb-10">
+                        <div className="flex flex-col items-center sm:items-start text-center sm:text-left lg:col-span-2">
                             {/* Logo */}
                             <Link to={URLS.HOME} className="flex items-center justify-center sm:justify-start mb-3">
                                 <img
@@ -27,14 +26,23 @@ const Footer2 = () => {
                                 Stay connected with stories of hope and progress
                             </p>
 
-                            {/* Email input + Subscribe button */}
-                            <div className="flex flex-col sm:flex-row w-full max-w-xs sm:max-w-sm mb-3 gap-2 sm:gap-0">
+                            {/* CHANGE 3: 
+                                'sm:flex-row' aur 'sm:gap-0' ko hata diya taake form hamesha 'flex-col' (stacked) rahe.
+                            */}
+                            <div className="flex w-full max-w-xs sm:max-w-md mb-3 gap-2">
+                                {/* CHANGE 4: 
+                                    Input se 'rounded-full', 'sm:rounded-l-full', 'sm:rounded-r-none' hata kar 'rounded-lg' lagaya.
+                                    'sm:flex-grow' bhi hata diya.
+                                */}
                                 <input
                                     type="email"
                                     placeholder="Email"
-                                    className="w-full sm:flex-grow p-3 rounded-full sm:rounded-l-full sm:rounded-r-none bg-gray-100 border border-gray-200 focus:outline-none focus:ring-2 focus:ring-orange-200 text-gray-800 text-sm"
+                                    className="w-full p-3 rounded-lg bg-gray-200 border shadow-sm border-gray-200 focus:outline-none focus:ring-2 focus:ring-orange-200 text-gray-800 text-sm"
                                 />
-                                <button className="bg-gray-200 text-gray-800 font-medium py-3 px-6 rounded-full sm:rounded-r-full sm:rounded-l-none hover:bg-gray-300 transition-colors duration-200">
+                                {/* CHANGE 5: 
+                                    Button se 'rounded-full', 'sm:rounded-r-full', 'sm:rounded-l-none' hata kar 'rounded-lg' lagaya.
+                                */}
+                                <button className="bg-gray-200 cursor-pointer text-gray-800 font-medium py-3 px-6 rounded-full hover:bg-gray-300 transition-colors duration-200">
                                     Subscribe
                                 </button>
                             </div>
@@ -50,8 +58,10 @@ const Footer2 = () => {
                         </div>
 
 
-                        {/* Column 2: Quick Links */}
-                        <div className="text-center sm:text-left lg:ml-20">
+                        {/* CHANGE 6: 
+                            Column 2 se 'lg:ml-20' hata diya. Grid gap ab spacing khud sambhal lega.
+                        */}
+                        <div className="text-center sm:text-left ml-0 md:ml-20">
                             <h3 className="text-lg font-semibold text-gray-800 mb-5">Quick Links</h3>
                             <ul className="space-y-3 text-gray-700">
                                 <li>
@@ -82,8 +92,10 @@ const Footer2 = () => {
                             </ul>
                         </div>
 
-                        {/* Column 3: Resources */}
-                        <div className="text-center sm:text-left lg:ml-10">
+                        {/* CHANGE 7: 
+                            Column 3 se 'lg:ml-10' hata diya.
+                        */}
+                        <div className="text-center sm:text-left ml-0 md:ml-20">
                             <h3 className="text-lg font-semibold text-gray-800 mb-5">Resources</h3>
                             <ul className="space-y-3 text-gray-700">
                                 <li>
@@ -114,8 +126,10 @@ const Footer2 = () => {
                             </ul>
                         </div>
 
-                        {/* Column 4: Connect */}
-                        <div className="text-center sm:text-left lg:ml-8">
+                        {/* CHANGE 8: 
+                            Column 4 se 'lg:ml-8' hata diya.
+                        */}
+                        <div className="text-center sm:text-left ml-0 md:ml-20">
                             <h3 className="text-lg font-semibold text-gray-800 mb-5">Connect</h3>
                             <ul className="space-y-3 text-gray-700">
                                 <li>
@@ -187,8 +201,8 @@ const Footer2 = () => {
                     </div>
                 </div>
             </footer>
-        </div>
+        </Sectionwraper>
     );
 };
 
-export default Footer2;
+export default Footer;

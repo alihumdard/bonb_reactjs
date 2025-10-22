@@ -1,5 +1,7 @@
 import React from 'react';
 import Footer2 from '../main/Footer2';
+import { Link } from 'react-router-dom';
+import URLS from '../config/urls.config';
 
 const About = () => {
     return (
@@ -30,7 +32,7 @@ const About = () => {
 
                         {/* Story Content */}
                         <div className="space-y-4 text-gray-700 text-base md:text-lg leading-relaxed  text-center md:text-left sm:px-0">
-                            <p className='px-0 md:px-28'>
+                            <p className='px-0 md:px-28 font-Poppins'>
                                 Beacon of New Beginnings was founded on a simple yet powerful belief:
                                 every survivor deserves a chance to reclaim their life, rebuild their dignity,
                                 and rediscover their strength. In Ghana, countless individuals face the devastating
@@ -38,7 +40,7 @@ const About = () => {
                                 alongside them on their journey to healing.
                             </p>
 
-                            <p className='px-0 md:px-28'>
+                            <p className='px-0 md:px-28 font-Poppins'>
                                 We started this work because we saw the gaps in support systems and the silence surrounding
                                 survivors' struggles. We witnessed the courage it takes to seek help and the transformation
                                 that happens when compassion meets action. Today, we stand as a beacon of hope, offering
@@ -176,9 +178,9 @@ const About = () => {
                             <p className="text-lg text-gray-700 mb-6 max-w-lg mx-auto md:mx-0">
                                 Our team is ready to answer any additional questions you might have.
                             </p>
-                            <button className="bg-orange-600 cursor-pointer text-white font-semibold py-3 px-8 rounded-full hover:bg-orange-700 transition-colors duration-300 text-lg">
+                            <Link to={URLS.CONTACT} className="bg-orange-600 cursor-pointer text-white font-semibold py-3 px-8 rounded-lg hover:bg-orange-700 transition-colors duration-300 text-lg">
                                 Contact
-                            </button>
+                            </Link>
                         </div>
                     </div>
                 </section>
