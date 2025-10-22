@@ -67,7 +67,7 @@ const Home = () => {
                                 offer more than just a roof.
                             </p>
                             <div className="flex items-center space-x-6">
-                                <button className="bg-orange-600 cursor-pointer text-white font-semibold py-3 px-7 rounded-full hover:bg-orange-700 transition-colors duration-300 text-md">
+                                <button className="bg-orange-600 cursor-pointer text-white font-semibold py-2 px-6 rounded-full hover:bg-orange-700 transition-colors duration-300 text-md">
                                     Learn more
                                 </button>
                                 <Link
@@ -139,7 +139,7 @@ const Home = () => {
                                 ))}
                             </div>
                             <div className="flex items-center space-x-6 mt-6">
-                                <button className="bg-orange-600 cursor-pointer text-white font-semibold py-3 px-7 rounded-full hover:bg-orange-700 transition-colors duration-300 text-md">
+                                <button className="bg-orange-600 cursor-pointer text-white font-semibold py-2 px-6 rounded-full hover:bg-orange-700 transition-colors duration-300 text-md">
                                     Learn more
                                 </button>
                                 <Link
@@ -188,7 +188,7 @@ const Home = () => {
                                     We provide comprehensive legal support to help survivors navigate their rights and seek justice. Our team stands beside them every step of the way.
                                 </p>
                                 <div className="flex items-center space-x-6">
-                                    <button className="bg-orange-600 cursor-pointer text-white font-semibold py-3 px-7 rounded-full hover:bg-orange-700 transition-colors duration-300 text-md">
+                                    <button className="bg-orange-600 cursor-pointer text-white font-semibold py-2 px-6 rounded-full hover:bg-orange-700 transition-colors duration-300 text-md">
                                         Learn more
                                     </button>
                                     <Link
@@ -246,7 +246,7 @@ const Home = () => {
                                     Our skills training and economic support programs help survivors create sustainable futures and break cycles of vulnerability.
                                 </p>
                                 <div className="flex items-center space-x-6">
-                                    <button className="bg-orange-600 cursor-pointer text-white font-semibold py-3 px-7 rounded-full hover:bg-orange-700 transition-colors duration-300 text-md">
+                                    <button className="bg-orange-600 cursor-pointer text-white font-semibold py-2 px-6 rounded-full hover:bg-orange-700 transition-colors duration-300 text-md">
                                         Learn more
                                     </button>
                                     <Link
@@ -304,7 +304,7 @@ const Home = () => {
                                     We build strong community connections that provide ongoing support, reducing isolation and fostering collective healing.
                                 </p>
                                 <div className="flex items-center space-x-6">
-                                    <button className="bg-orange-600 cursor-pointer text-white font-semibold py-3 px-7 rounded-full hover:bg-orange-700 transition-colors duration-300 text-md">
+                                    <button className="bg-orange-600 cursor-pointer text-white font-semibold py-2 px-6 rounded-full hover:bg-orange-700 transition-colors duration-300 text-md">
                                         Learn more
                                     </button>
                                     <Link

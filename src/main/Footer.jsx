@@ -38,23 +38,26 @@ const Footer = () => {
                             {/* CHANGE 3: 
                                 'sm:flex-row' aur 'sm:gap-0' ko hata diya taake form hamesha 'flex-col' (stacked) rahe.
                             */}
-                            <div className="flex w-full max-w-xs sm:max-w-md mb-3 gap-2">
-                                {/* CHANGE 4: 
-                                    Input se 'rounded-full', 'sm:rounded-l-full', 'sm:rounded-r-none' hata kar 'rounded-lg' lagaya.
-                                    'sm:flex-grow' bhi hata diya.
-                                */}
+                            <div className="flex flex-col sm:flex-row w-full max-w-xs sm:max-w-md mb-3 gap-2 sm:gap-3 mx-auto">
+                                {/* Input */}
                                 <input
                                     type="email"
                                     placeholder="Email"
-                                    className="w-full p-3 rounded-lg bg-gray-100 border border-gray-200 focus:outline-none focus:ring-2 focus:ring-orange-200 text-gray-800 text-sm"
+                                    className="w-full p-3 rounded-lg bg-gray-100 border border-gray-200 
+               focus:outline-none focus:ring-2 focus:ring-orange-200 
+               text-gray-800 text-sm"
                                 />
-                                {/* CHANGE 5: 
-                                    Button se 'rounded-full', 'sm:rounded-r-full', 'sm:rounded-l-none' hata kar 'rounded-lg' lagaya.
-                                */}
-                                <button className="bg-gray-200 cursor-pointer text-gray-800 font-medium py-3 px-6 rounded-full hover:bg-gray-300 transition-colors duration-200">
+
+                                {/* Button */}
+                                <button
+                                    className="bg-gray-200 cursor-pointer text-gray-800 font-medium 
+               py-3 px-6 rounded-lg hover:bg-gray-300 
+               transition-colors duration-200 w-full sm:w-auto"
+                                >
                                     Subscribe
                                 </button>
                             </div>
+
 
                             {/* Disclaimer */}
                             <p className="text-gray-500 text-xs leading-relaxed max-w-xs sm:max-w-sm">
